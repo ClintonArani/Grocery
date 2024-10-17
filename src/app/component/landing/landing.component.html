@@ -1,1 +1,31 @@
-<p>landing works!</p>
+<app-navbar/>
+<div class="main">
+    <div class="landing-page">
+        <div class="left">
+            <button class="dropdown-btn" (click)="toggleDropdown()">
+                &#9776; All departments &#x25BC;
+            </button>
+            <ul *ngIf="isDropdownOpen" class="dropdown-content">
+                <li>Fresh Meat</li>
+                <li>Vegetables</li>
+                <li>Fruits & Nut Gifts</li>
+                <li>Freah Berries</li>
+                <li>Ocean Foods</li>
+                <li>Butter & Eggs</li>
+                <li>Fastfood</li>
+                <li>Fresh Onion</li>
+                <li>Papaya $ Crisps</li>
+                <li>Oatmeal</li>
+                <li>Fresh Bananas</li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="top-section">
+    
+            </div>
+            <div class="bottom-section">
+                
+            </div>
+        </div>
+    </div>
+</div>

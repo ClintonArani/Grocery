@@ -1,1 +1,58 @@
-<p>navbar works!</p>
+<div class="navbar">
+    <div class="topbar">
+        <div class="left">
+            <span>
+                <fa-icon [icon]="faEnvelope"></fa-icon>
+                <p>hello&#64;colorlib.com</p>
+            </span>
+            <p>Free Shipping for all orders of {{ orderAmount | currency:'USD'  }}</p>
+        </div>
+        <div class="right">
+            <ul>
+                <li><fa-icon [icon]="faFacebook"></fa-icon></li>
+                <li><fa-icon [icon]="faTwitter"></fa-icon></li>
+                <li><fa-icon [icon]="faLinkedin"></fa-icon></li>
+                <li><fa-icon [icon]="faPinterest"></fa-icon></li>
+            </ul>
+            <div class="language">
+                <img src="../assets/language.png" alt="">
+                <p>English</p>
+                <fa-icon [icon]="faChevronDown"></fa-icon>
+            </div>
+            <div class="account">
+                <fa-icon [icon]="faUser"></fa-icon>
+                <p>Login</p>
+            </div>
+        </div>
+    </div>
+    <div class="bottombar">
+        <div class="logo">
+            <img src="../assets/logo.png" alt="">
+        </div>
+        <ul>
+            <li class="active">home</li>
+            <li>shop</li>
+            <li>pages</li>
+            <li>blog</li>
+            <li>contact</li>
+        </ul>
+        <div class="icons">
+            <div class="icon">
+              <div class="heart">
+                    <fa-icon [icon]="faHeart"></fa-icon>
+                    <p>1</p>
+              </div>
+                <div class="cart">
+                    <fa-icon [icon]="faShoppingBag"></fa-icon>
+                    <p>3</p>
+                </div>  
+            </div>
+            
+            
+            <span>
+                <small>item:</small>
+                <p>{{ itemAmount | currency:'USD'  }}</p>
+            </span>
+        </div>
+    </div>
+</div>
