@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faFacebook, faTwitter, faLinkedin, faPinterest } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faUser, faPhone, faHeart, faChevronDown, faShoppingBag, faShoppingBasket } from '@fortawesome/free-solid-svg-icons';
@@ -9,7 +9,6 @@ import { faEnvelope, faUser, faPhone, faHeart, faChevronDown, faShoppingBag, faS
   imports: [FontAwesomeModule, CommonModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',
-  encapsulation: ViewEncapsulation.None
 })
 export class NavbarComponent {
   faFacebook = faFacebook;

@@ -1,6 +1,3 @@
-:root{
-    --color-green: #7fad39;
-}
 .navbar{
     display: flex;
     flex-direction: column;
@@ -104,10 +101,10 @@
     cursor: pointer;
 }
 .navbar > .bottombar > ul > li:hover{
-    color: var(--color-green);
+    color: #7fad39;
 }
 .navbar > .bottombar > ul > .active{
-    color: var(--color-green);
+    color: #7fad39;
 }
 .navbar > .bottombar > .icons{
     display: flex;
@@ -130,7 +127,7 @@
     cursor: pointer;
 }
 .navbar > .bottombar > .icons > .icon > .heart > p{
-    background-color: var(--color-green);
+    background-color: #7fad39;
     padding: 5px;
     border-radius: 50%;
     color: #fff;
@@ -150,7 +147,7 @@
     cursor: pointer;
 }
 .navbar > .bottombar > .icons > .icon > .cart > p{
-    background-color: var(--color-green);
+    background-color: #7fad39;
     padding: 5px;
     border-radius: 50%;
     color: #fff;
