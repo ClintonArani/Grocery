@@ -3,29 +3,133 @@
     <div class="landing-page">
         <div class="left">
             <button class="dropdown-btn" (click)="toggleDropdown()">
-                &#9776; All departments &#x25BC;
+                <fa-icon [icon]="faBars"></fa-icon>
+                <p>All departments</p>
+                <fa-icon [icon]="faChevronDown"></fa-icon>
             </button>
-            <ul *ngIf="isDropdownOpen" class="dropdown-content">
+            <ul [class.open]="isDropdownOpen" class="dropdown-content">
                 <li>Fresh Meat</li>
                 <li>Vegetables</li>
                 <li>Fruits & Nut Gifts</li>
-                <li>Freah Berries</li>
+                <li>Fresh Berries</li>
                 <li>Ocean Foods</li>
                 <li>Butter & Eggs</li>
                 <li>Fastfood</li>
                 <li>Fresh Onion</li>
-                <li>Papaya $ Crisps</li>
+                <li>Papaya & Crisps</li>
                 <li>Oatmeal</li>
                 <li>Fresh Bananas</li>
             </ul>
         </div>
+
         <div class="right">
-            <div class="top-section">
-    
+            <div class="right-top">
+                <div class="input">
+                    <div class="category">
+                        <h4>All Category</h4>
+                        <fa-icon [icon]="faChevronDown"></fa-icon>
+                    </div>
+                    <input type="text" placeholder="Search what you need....">
+                    <button>SEARCH</button>
+                </div>
+                <div class="support">
+                    <fa-icon [icon]="faPhone"></fa-icon>
+                    <span>
+                        <p>+254791736576</p>
+                        <small>support 24/7 time</small>
+                    </span>
+                </div>
             </div>
-            <div class="bottom-section">
-                
+            <div class="right-bottom">
+                <div class="textpart">
+                    <h4>FRUIT FRESH</h4>
+                    <h1>Vegetable <br> 100% Organic</h1>
+                    <p>Free Pickup and Delivery Available</p>
+                    <button>SHOP NOW</button>
+                </div>
+                <img src="../assets/vege_landing.png" alt="">
             </div>
         </div>
+    </div>
+
+    <!-- carosel section -->
+    <div class="carosel-container">
+        <div class="carosel-items" *ngFor="let item of items">
+            <img [src]="item.image" [alt]="item.name">
+            <span>{{item.name}}</span>
+        </div>
+    </div>
+
+    <!-- FEATURED PRODUCT SECTION -->
+    <div class="product-container">
+        <h1>Featured Product</h1>
+        <div class="linebar"></div>
+        <ul>
+            <li>All</li>
+            <li>Oranges</li>
+            <li>Fresh Meat</li>
+            <li>Vegetables</li>
+            <li>Fastfood</li>
+            
+        </ul>
+        <div class="product-box">
+            <div class="product">
+                <img src="../assets/apples.png" alt="">
+                <div class="text">
+                    <p>Banana</p>
+                    <span>{{30 | currency}}</span>
+                </div>
+            </div>
+            <div class="product">
+                <img src="../assets/banana.png" alt="">
+                <div class="text">
+                    <p>Banana</p>
+                    <span>{{30 | currency}}</span>
+                </div>
+            </div>
+            <div class="product">
+                <img src="../assets/guavas.png" alt="">
+                <div class="text">
+                    <p>Banana</p>
+                    <span>{{30 | currency}}</span>
+                </div>
+            </div>
+            <div class="product">
+                <img src="../assets/melon.png" alt="">
+                <div class="text">
+                    <p>Banana</p>
+                    <span>{{30 | currency}}</span>
+                </div>
+            </div>
+            <div class="product">
+                <img src="../assets/black_berries.png" alt="">
+                <div class="text">
+                    <p>Banana</p>
+                    <span>{{30 | currency}}</span>
+                </div>
+            </div>
+            <div class="product">
+                <img src="../assets/cake.png" alt="">
+                <div class="text">
+                    <p>Banana</p>
+                    <span>{{30 | currency}}</span>
+                </div>
+            </div>
+            <div class="product">
+                <img src="../assets/mango.png" alt="">
+                <div class="text">
+                    <p>Banana</p>
+                    <span>{{30 | currency}}</span>
+                </div>
+            </div>
+            <div class="product">
+                <img src="../assets/apple.png" alt="">
+                <div class="text">
+                    <p>Banana</p>
+                    <span>{{30 | currency}}</span>
+                </div>
+            </div>
+        </div>
+        
     </div>
 </div>
