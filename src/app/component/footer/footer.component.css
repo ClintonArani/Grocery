@@ -1,0 +1,143 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f3f6fa;
+    margin-bottom: 2px solid #aaa;
+    gap: 2rem;
+}
+.footer > .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+.footer > .top > .card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer > .top > .card1 > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer > .top > .card1 > ul >li{
+    list-style: none;
+}
+.footer > .top > .card1 > ul >li:hover{
+    text-decoration: underline;
+}
+.footer > .top > .card2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer > .top > .card2 > h2{
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer > .top > .card2 > .links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer > .top > .card2 > .links > .left > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.footer > .top > .card2 > .links > .left > ul >li{
+    list-style: none;
+    text-transform: capitalize;
+
+}
+.footer > .top > .card2 > .links > .left > ul >li:hover{
+    text-decoration: underline;
+}
+.footer > .top > .card3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer > .top > .card3 > h2{
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer > .top > .card3 > .input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.footer > .top > .card3 > .input > input{
+    width: 13rem;
+    height: 2.4rem;
+    padding-left: 15px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.footer > .top > .card3 > .input > button{
+    height: 2.69rem;
+    width: 6rem;
+    border: none;
+    color: aliceblue;
+    background-color: #7fb800;
+    font-size: large;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.footer > .top > .card3 > .social-icons{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: large;
+}
+.footer > .top > .card3 > .social-icons> fa-icon{
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 50%;
+}
+.footer > .bottom{
+    border-top: 2px solid #ccc;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18rem;
+}
+.footer > .bottom > span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+    gap: 1rem;
+}
+.footer > .bottom > span > span{
+    border-right: 2px solid #aaa;
+    padding: 10px;
+    line-height: 0;
+}
+.footer > .bottom > span > p > fa-icon{
+    color: #7fb800;
+    margin-right: 5px;
+} 
+.footer > .bottom > span > p > b{
+    color: #6307f8;
+    text-transform: capitalize;
+}
+.footer > .bottom > .payment-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3rem;
+    gap: 1rem;
+}
+.footer > .bottom > .payment-icons > img{
+    width: 2rem;
+    height: 2rem;
+}

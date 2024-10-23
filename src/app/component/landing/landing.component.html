@@ -84,7 +84,7 @@
                 <img src="../assets/banana.png" alt="">
                 <div class="text">
                     <p>Banana</p>
-                    <span>{{30 | currency}}</span>
+                    <span>{{30 | currency: 'EUR':'code':'1.2-2'}}</span>
                 </div>
             </div>
             <div class="product">
@@ -130,6 +130,93 @@
                 </div>
             </div>
         </div>
-        
+    </div>
+    <!-- THE BANNER SECTION -->
+    <div class="banner">
+        <img src="../assets/banner-1.jpg" alt="">
+        <img src="../assets/banner-2.jpg" alt="">
+    </div>
+
+    <!-- THE PRODUCT SECTION -->
+    <div class="product-area">
+        <h1>review latest top-rated products</h1>
+        <div class="product-container">
+            <div class="product" *ngFor="let product of products">
+                <div class="image">
+                    <img [src]="product.image" [alt]="product.name">
+                </div>
+                <div class="text">
+                    <span>{{ product.name }}</span>
+                    <p>{{ product.amount | currency: 'USD': 'symbol' }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- THE PROG -->
+     <div class="blog-container">
+        <div class="blog">
+            <div class="top">
+                <div class="image">
+                    <img src="../assets/blog-1.jpg" alt="blog-1 image">
+                </div>
+                <div class="task">
+                    <div class="date">
+                        <fa-icon [icon]="faCalendar"></fa-icon>
+                        <p>October 22, 2025</p>
+                    </div>
+                    <div class="text">
+                        <fa-icon [icon]="faComment"></fa-icon>
+                        <p>10</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <h2>cooking tips make cooking simple</h2>
+                <p>Master these cooking tips to effortlessly elevate your <br> kitchen skills and simplify every meal.</p>
+            </div>
+        </div>
+        <div class="blog">
+            <div class="top">
+                <div class="image">
+                    <img src="../assets/blog-2.jpg" alt="blog-1 image">
+                </div>
+                <div class="task">
+                    <div class="date">
+                        <fa-icon [icon]="faCalendar"></fa-icon>
+                        <p>October 20, 2025</p>
+                    </div>
+                    <div class="text">
+                        <fa-icon [icon]="faComment"></fa-icon>
+                        <p>8</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <h2>6 ways to prepare breakfast for 30</h2>
+                <p>Explore 6 practical methods to seamlessly prepare <br>breakfast for a group of 30</p>
+            </div>
+        </div>
+        <div class="blog">
+            <div class="top">
+                <div class="image">
+                    <img src="../assets/blog-3.jpg" alt="blog-1 image">
+                </div>
+                <div class="task">
+                    <div class="date">
+                        <fa-icon [icon]="faCalendar"></fa-icon>
+                        <p>October 21, 2025</p>
+                    </div>
+                    <div class="text">
+                        <fa-icon [icon]="faComment"></fa-icon>
+                        <p>5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <h2>cooking tips make cooking simple</h2>
+                <p>Experience nature at its finest by visiting the cleanest <br> farms in the US, where sustainability meets serenity</p>
+            </div>
+        </div>
     </div>
 </div>
+<app-footer/>

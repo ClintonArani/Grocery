@@ -1,1 +1,64 @@
-<p>footer works!</p>
+<div class="footer">
+    <div class="top">
+        <div class="card1">
+            <img src="../assets/logo.png" alt="">
+            <ul>
+                <li>{{address.address}}</li>
+                <li>{{address.phone}}</li>
+                <li>{{address.email}}</li>
+            </ul>
+        </div>
+        <div class="card2">
+            <h2>useful links</h2>
+            <div class="links">
+                <div class="left">
+                    <ul>
+                        <li>about us</li>
+                        <li>about our shop</li>
+                        <li>secure shopping</li>
+                        <li>delivery information</li>
+                        <li>privacy policy</li>
+                        <li>our sitemap</li>
+                    </ul>
+                </div>
+                <div class="left">
+                    <ul>
+                        <li>who we are</li>
+                        <li>our services</li>
+                        <li>projects</li>
+                        <li>contact</li>
+                        <li>innovation</li>
+                        <li>testimonials</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card3">
+            <h2>join our newsletter now</h2>
+            <p>get E-mail updates about our latest shop and special offers.</p>
+            <div class="input">
+                <input type="email" placeholder="Enter your mail">
+                <button>subscribe</button>
+            </div>
+            <div class="social-icons">
+                <fa-icon [icon]="faFacebook"></fa-icon>
+                <fa-icon [icon]="faInstagram"></fa-icon>
+                <fa-icon [icon]="faTwitter"></fa-icon>
+                <fa-icon [icon]="faPinterest"></fa-icon>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <span>
+            <span>Copyright &copy; All rights reserved</span>
+            <p>This template is made with <fa-icon [icon]="faHeart"></fa-icon>by <b>Clinton omari</b></p>
+        </span>
+        <div class="payment-icons">
+            <img src="../assets/skrill.png" alt="">
+            <img src="../assets/bitcoin.png" alt="">
+            <img src="../assets/paypal.png" alt="">
+            <img src="../assets/mastercard.png" alt="">
+            <img src="../assets/visa.png" alt="">
+        </div>
+    </div>
+</div>
