@@ -276,3 +276,144 @@
     font-size: large;
     font-Weight: bold;
 }
+/* THE BANNER SECTION */
+.banner{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* THE PRODUCT SECTION */
+.product-area {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3rem;
+}
+.product-area > h1 {
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.product-area > .product-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr); /* Responsive grid */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.product-area > .product-container > .product {
+    width: 100%; /* Make the product container flexible */
+    max-width: 250px; /* Optional: maximum width for each product */
+    height: auto; /* Let the height adjust based on the content */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.product-area > .product-container > .product > .image {
+    width: 100%; /* Adjust to the product container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 0 4px #252525;
+}
+.product-area > .product-container > .product > .image > img {
+    width: 100%; /* Fill the container */
+    height: 13rem; /* Fill the container */
+    object-fit: cover; /* Ensure the image covers without distorting */
+    border-radius: 10px;
+}
+.product-area > .product-container > .product > .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.product-area > .product-container > .product > .text > span {
+    font-size: large;
+    color: #252525;
+    text-transform: capitalize;
+}
+.product-area > .product-container > .product > .text > p {
+    margin-top: 0px;
+    font-size: large;
+    font-weight: bold;
+    font-family: verdana, arial, helvetica;
+}
+/* THE BLOG SECTION */
+.blog-container{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-top: 1rem;
+    margin-bottom: 3rem;
+}
+.blog-container > .blog{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 23rem;
+}
+.blog-container > .blog > .top{
+    display: flex;
+    flex-direction: column;
+}
+.blog-container > .blog > .top > .image > img{
+    width: 23rem;
+}
+.blog-container > .blog > .top > .task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+.blog-container > .blog > .top > .task > .date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.blog-container > .blog > .top > .task > .date > fa-icon{
+    font-size: large;
+    color: #6f6f6f;
+}
+.blog-container > .blog > .top > .task > .date > p{
+    font-size: large;
+    color: #6f6f6f;
+}
+.blog-container > .blog > .top > .task > .text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}.blog-container > .blog > .top > .task > .text > fa-icon{
+    font-size: large;
+    color: #6f6f6f;
+}
+.blog-container > .blog > .top > .task > .text > p{
+    font-size: large;
+    color: #6f6f6f;
+}
+.blog-container > .blog > .bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1rem;
+}
+.blog-container > .blog > .bottom >p{
+    text-align: center;
+    margin-top: -.5rem;
+}
